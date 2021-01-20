@@ -7,6 +7,7 @@ import ScrollToTop from "./ScrollToTop";
 
 //pages
 import Home from "../pages/Home";
+import Tombola from "../pages/Tombola";
 
 // utils
 import { url } from "./url";
@@ -17,6 +18,7 @@ const AppRouter = () => {
       <ScrollToTop />
       <Switch>
         <PublicRoute path={url.home} exact component={Home} />
+        <PublicRoute path={url.tombola} exact component={Tombola} />
       </Switch>
     </Router>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { auth, firebase } from "../utils/Firebase";
+import { auth, firebase } from "../../utils/Firebase";
 import FirebaseAuthUI from "react-firebaseui-localized";
 
 // styles
@@ -7,7 +7,7 @@ import { Container } from "./Home.styled";
 
 const uiConfig = {
   signInFlow: "popup",
-  signInSuccessUrl: "/router",
+  signInSuccessUrl: "/tombola",
   signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
 };
 
