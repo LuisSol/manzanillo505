@@ -2,8 +2,22 @@
 
 exports[`renders app without crashing 1`] = `
 <div>
-  <div>
-    HOLA QUE TAL!!!!
-  </div>
+  <section
+    class="sc-bdfBwQ bcwhpf"
+  >
+    <h1
+      style="margin-bottom: 10px;"
+    >
+      BIENVENIDO
+    </h1>
+    <link
+      href="https://www.gstatic.com/firebasejs/ui/4.1.0/firebase-ui-auth.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <div
+      id="firebaseui_container"
+    />
+  </section>
 </div>
 `;
