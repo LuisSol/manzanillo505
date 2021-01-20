@@ -1,9 +1,15 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders app without crashing", () => {
+  global.matchMedia = jest.fn().mockImplementation(() => ({
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+    matches: true,
+  }));
+
+  const { container } = render(<App />);
+
+  expect(container).toMatchSnapshot();
 });
