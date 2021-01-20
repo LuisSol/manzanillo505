@@ -1,7 +1,10 @@
 import React from "react";
 
+// components
+import AppRouter from "./routes/AppRouter";
+
 function App() {
-  return <div>HOLA QUE TAL!!!!</div>;
+  return <AppRouter />;
 }
 
 export default App;
